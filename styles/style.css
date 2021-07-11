@@ -8,6 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   color: #010101;
+  background: #fff;
 }
 
 a {
@@ -18,6 +19,55 @@ a {
 a:hover {
   color: #010101;
   text-decoration: none;
+}
+
+.navbar {
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.navbar .navbar-brand {
+  max-height: 80px;
+}
+
+.navbar .navbar-brand img {
+  max-height: 80px;
+}
+
+.navbar .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin: 0 5px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #b14628;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:focus, .navbar .navbar-nav .nav-item .nav-link.active {
+  background: #b14628;
+  color: #fff;
+  border-radius: 4px;
+}
+
+section[role="search"] {
+  padding: 5vh 0;
+  background: #b14628;
+  color: #fff;
+}
+
+section[role="search"] .form-control {
+  border-radius: 30px;
+}
+
+section[role="banner"] {
+  padding: 5vh 0;
+  min-height: 67vh;
 }
 
 section[role="aboutUs"],
@@ -32,7 +82,7 @@ section[role="aboutUs"] h2,
 section[role="features"] h2,
 section[role="benefits"] h2 {
   font-size: 4rem;
-  font-weight: 100;
+  font-weight: 400;
   color: #b14628;
 }
 
@@ -78,6 +128,10 @@ section[role="benefits"] ul li + li {
   border-top: 1px dashed #f2f2f2;
 }
 
+section[role="features"] {
+  background: #f2f2f2;
+}
+
 footer[role="footer"] {
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -99,7 +153,8 @@ footer[role="footer"] ul li a {
   font-size: 0.8rem;
 }
 
-footer[role="footer"] ul li a .fa, footer[role="footer"] ul li a .fab {
+footer[role="footer"] ul li a .fa,
+footer[role="footer"] ul li a .fab {
   font-size: 1.2rem;
   margin-right: 10px;
 }
@@ -117,37 +172,155 @@ main[role="main"] aside[role="search"] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
-  margin-right: 20px;
+  margin: -5vh 20px -5vh -15px;
+  padding: 20px;
+  background: #b14628;
+  color: #fff;
 }
 
 main[role="main"] aside[role="search"] .badge {
   font-weight: 400;
+  border: 1px solid #dc7e63;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  background: #d25b3a;
 }
 
-main[role="main"] section[role="datalist"] {
+main[role="main"] aside[role="search"] .badge.active {
+  border-color: #5e2515;
+  background: #87361f;
+}
+
+main[role="main"] aside[role="search"] .badge i {
+  margin-left: 5px;
+}
+
+section[role="datalist"] {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
+.listItem {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  overflow-y: hidden;
+}
+
+.listItem .info {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.listItem .info i[class^='fa'] {
+  margin: 2px 1px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.listItem .info i[class^='fa']::after {
+  background: rgba(255, 255, 255, 0.6);
+  width: 20px;
+  height: 20px;
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: inline-block;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.listItem .info i[class^='fa']::before {
+  z-index: 9;
+  position: relative;
+  font-size: 12px;
+  color: #000;
+}
+
+.listItem .heading {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+}
+
+.listItem.active {
+  background: #b14628;
+  -webkit-box-shadow: 0 0 10px #b14628;
+          box-shadow: 0 0 10px #b14628;
+}
+
+.listItem.active i[class^='fa']::after {
+  background: #b14628;
+  opacity: 0.5;
+}
+
+.listItem.active i[class^='fa']::before {
+  color: #fff;
+}
+
+.inlineStyle {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.inlineStyle li {
+  display: inline-block;
+}
+
+.text-primary {
+  color: #b14628 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
 @media only screen and (max-width: 576px) {
   footer[role="footer"] {
     text-align: center;
+    font-size: 0.8rem;
   }
   footer[role="footer"] h6 {
-    margin-top: 20px;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+  footer[role="footer"] ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
   }
   footer[role="footer"] ul li {
     display: inline-block;
     padding: 0 10px;
     position: relative;
+    margin: 0;
+    line-height: 0.8rem;
+  }
+  footer[role="footer"] ul li a {
+    font-size: 0.7rem;
   }
   footer[role="footer"] ul li + li::before {
     content: '|';
     position: absolute;
     left: -5px;
-    top: 5px;
-    font-size: 0.8rem;
+    top: 0px;
+    font-size: 0.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
