@@ -43,8 +43,15 @@
             </div>
         </nav>
     </header>
-    <main role="main" class="container-fluid d-sm-flex flex-row">
-        <aside role="search">
+    <main role="main" class="container-fluid d-md-flex flex-row">
+        <div class="d-block d-md-none mb-3">
+            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#searchArea"
+                aria-controls="searchArea" aria-expanded="false"><i class="fas fa-search"></i> Search</button>
+            <button class="btn btn-primary float-end btn-sm" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="fas fa-filter"></i>
+                Filter</button>
+        </div>
+        <aside role="search" class="collapse" id="searchArea">
             <input type="text" placeholder="Search" class="form-control mb-3">
             <button class="btn btn-danger btn-sm">Clear All</button>
             <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="offcanvas"
@@ -83,7 +90,45 @@
         </aside>
         <section role="dataList">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="listItem">
+                        <div class="info">
+                            <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="food.com"></i>
+                            <i class="fab fa-nutritionix" data-bs-toggle="tooltip" title="food.com"></i>
+                            <i class="fas fa-headset" data-bs-toggle="tooltip" title="Report Issue"></i>
+                        </div>
+                        <img src="https://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/49/29/23/zxGkOKueTWuRKQE7zKvW-hot-orange-juice-002.JPG"
+                            class="img-fluid" alt="">
+                        <div class="details">
+                            <div class="heading">Orange Dream Punch</div>
+                            Ingredients Needed:
+                            <span class="badge bg-info text-dark">sugar</span>
+                            <span class="badge bg-info text-dark">water</span>
+                            <span class="badge bg-info text-dark">orange</span>
+                            <span class="badge bg-info text-dark">tea bags</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="listItem">
+                        <div class="info">
+                            <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="food.com"></i>
+                            <i class="fab fa-nutritionix" data-bs-toggle="tooltip" title="food.com"></i>
+                            <i class="fas fa-headset" data-bs-toggle="tooltip" title="Report Issue"></i>
+                        </div>
+                        <img src="https://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/49/29/23/zxGkOKueTWuRKQE7zKvW-hot-orange-juice-002.JPG"
+                            class="img-fluid" alt="">
+                        <div class="details">
+                            <div class="heading">Orange Dream Punch</div>
+                            Ingredients Needed:
+                            <span class="badge bg-info text-dark">sugar</span>
+                            <span class="badge bg-info text-dark">water</span>
+                            <span class="badge bg-info text-dark">orange</span>
+                            <span class="badge bg-info text-dark">tea bags</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="listItem active">
                         <div class="info">
                             <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="food.com"></i>
@@ -92,15 +137,17 @@
                         </div>
                         <img src="https://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/49/29/23/zxGkOKueTWuRKQE7zKvW-hot-orange-juice-002.JPG"
                             class="img-fluid" alt="">
-                        <div class="heading">Orange Dream Punch</div>
-                        Ingredients Needed:
-                        <span class="badge bg-info text-dark">sugar</span>
-                        <span class="badge bg-info text-dark">water</span>
-                        <span class="badge bg-info text-dark">orange</span>
-                        <span class="badge bg-info text-dark">tea bags</span>
+                        <div class="details">
+                            <div class="heading">Orange Dream Punch</div>
+                            Ingredients Needed:
+                            <span class="badge bg-info text-dark">sugar</span>
+                            <span class="badge bg-info text-dark">water</span>
+                            <span class="badge bg-info text-dark">orange</span>
+                            <span class="badge bg-info text-dark">tea bags</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="listItem">
                         <div class="info">
                             <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="food.com"></i>
@@ -109,46 +156,14 @@
                         </div>
                         <img src="https://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/49/29/23/zxGkOKueTWuRKQE7zKvW-hot-orange-juice-002.JPG"
                             class="img-fluid" alt="">
-                        <div class="heading">Orange Dream Punch</div>
-                        Ingredients Needed:
-                        <span class="badge bg-info text-dark">sugar</span>
-                        <span class="badge bg-info text-dark">water</span>
-                        <span class="badge bg-info text-dark">orange</span>
-                        <span class="badge bg-info text-dark">tea bags</span>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="listItem">
-                        <div class="info">
-                            <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="food.com"></i>
-                            <i class="fab fa-nutritionix" data-bs-toggle="tooltip" title="food.com"></i>
-                            <i class="fas fa-headset" data-bs-toggle="tooltip" title="Report Issue"></i>
+                        <div class="details">
+                            <div class="heading">Orange Dream Punch</div>
+                            Ingredients Needed:
+                            <span class="badge bg-info text-dark">sugar</span>
+                            <span class="badge bg-info text-dark">water</span>
+                            <span class="badge bg-info text-dark">orange</span>
+                            <span class="badge bg-info text-dark">tea bags</span>
                         </div>
-                        <img src="https://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/49/29/23/zxGkOKueTWuRKQE7zKvW-hot-orange-juice-002.JPG"
-                            class="img-fluid" alt="">
-                        <div class="heading">Orange Dream Punch</div>
-                        Ingredients Needed:
-                        <span class="badge bg-info text-dark">sugar</span>
-                        <span class="badge bg-info text-dark">water</span>
-                        <span class="badge bg-info text-dark">orange</span>
-                        <span class="badge bg-info text-dark">tea bags</span>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="listItem">
-                        <div class="info">
-                            <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="food.com"></i>
-                            <i class="fab fa-nutritionix" data-bs-toggle="tooltip" title="food.com"></i>
-                            <i class="fas fa-headset" data-bs-toggle="tooltip" title="Report Issue"></i>
-                        </div>
-                        <img src="https://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/49/29/23/zxGkOKueTWuRKQE7zKvW-hot-orange-juice-002.JPG"
-                            class="img-fluid" alt="">
-                        <div class="heading">Orange Dream Punch</div>
-                        Ingredients Needed:
-                        <span class="badge bg-info text-dark">sugar</span>
-                        <span class="badge bg-info text-dark">water</span>
-                        <span class="badge bg-info text-dark">orange</span>
-                        <span class="badge bg-info text-dark">tea bags</span>
                     </div>
                 </div>
 
@@ -238,6 +253,7 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+        document.getElementsByName('aside').style.display = 'none';
     </script>
 </body>
 

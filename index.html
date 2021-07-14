@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles/style.css">
     <title>Make Our Meal</title>
 </head>
@@ -56,10 +57,10 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                        <div class="row">
-                           <div class="col-sm-6">
+                           <div class="col-md-6">
                                 <img src="images/graph.png" alt="">
                            </div>
-                           <div class="col-sm-6">
+                           <div class="col-md-6">
                             Grocery Bill : You can use MakeOurMeal search engine to make the maximum use of ingredients that you have at home.
                             Cooking Time : Use the cooking time filter to cook something quickly.
                             Diet Needs : If you have special diet needs, why to use the same old recipes, when you can cook something interesting.
@@ -221,6 +222,18 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+        if (document.body.scrollTop > 50) {
+            document.getElementsByClassName("myP").className = "test";
+            //alert('aaaa');
+        } else {
+            //document.getElementById("myP").className = "";
+            //alert('bbb');
+        }
+        }
+    </script>
 </body>
 
 </html>

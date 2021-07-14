@@ -33,6 +33,30 @@ a:hover {
   max-height: 80px;
 }
 
+.navbar .navbar-toggler {
+  border: 2px solid #b14628;
+  padding: 10px;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  border-top: 2px solid #b14628;
+  border-bottom: 2px solid #b14628;
+  position: relative;
+  height: 20px;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 100%;
+  background: #b14628;
+  height: 2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .navbar .navbar-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -164,15 +188,15 @@ footer[role="footer"] ul li + li {
 }
 
 main[role="main"] {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 main[role="main"] aside[role="search"] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
-  margin: -5vh 20px -5vh -15px;
+  margin: -15px 20px -15px -15px;
   padding: 20px;
   background: #b14628;
   color: #fff;
@@ -195,6 +219,10 @@ main[role="main"] aside[role="search"] .badge i {
   margin-left: 5px;
 }
 
+main[role="main"] aside[role="search"].collapse {
+  display: inline-block;
+}
+
 section[role="datalist"] {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -204,9 +232,9 @@ section[role="datalist"] {
 .listItem {
   position: relative;
   margin-bottom: 20px;
-  border: 1px solid #f2f2f2;
   border-radius: 20px;
   overflow-y: hidden;
+  background: #f2f2f2;
 }
 
 .listItem .info {
@@ -247,8 +275,14 @@ section[role="datalist"] {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   position: absolute;
-  top: 250px;
+  left: 0px;
+  bottom: 70px;
   width: 100%;
+  padding: 10px;
+}
+
+.listItem .details {
+  padding: 10px;
 }
 
 .listItem.active {
@@ -276,6 +310,11 @@ section[role="datalist"] {
 
 .inlineStyle li {
   display: inline-block;
+}
+
+.btn.btn-primary {
+  background-color: #b14628;
+  border-color: #b14628;
 }
 
 .text-primary {
@@ -321,6 +360,21 @@ section[role="datalist"] {
     left: -5px;
     top: 0px;
     font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main[role="main"] aside[role="search"] {
+    margin: 0 0 20px 0 !important;
+  }
+  main[role="main"] aside[role="search"].collapse {
+    display: none;
+  }
+  main[role="main"] aside[role="search"].collapse.show {
+    display: block;
+  }
+  main[role="main"] aside[role="search"].collapsing {
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
