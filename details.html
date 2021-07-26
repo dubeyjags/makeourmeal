@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Make Our Meal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Makeourmeal.com"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <select name="" id="" class="form-select form-select-sm">
+                                <option value="">Self</option>
+                                <option value="">Spouse</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-list-ul d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Recipe Collection</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-search d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Search More Recipies</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-cog d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Member Settings</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-user d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Member Management</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html"><i
+                                    class="fa fa-sign-in-alt d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Login With <img src="images/google.png"
+                                        alt=""></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="Details" class="container">
+
+        <h1 class="pageHeading">Orange Dream Punch</h1>
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-5">
+                <img src="https://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/49/29/23/zxGkOKueTWuRKQE7zKvW-hot-orange-juice-002.JPG"
+                    class="img-fluid" alt="">
+            </div>
+            <div class="col-xl-5 col-lg-8 col-md-7 detail">
+                <div class="row">
+                    <div class="col-4 text-end">Chef</div>
+                    <div class="col-8">KJB357 <i class="fas fa-info-circle"></i></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 text-end">Cooking Time</div>
+                    <div class="col-8">15 Minutes</div>
+                </div>
+                <div class="row">
+                    <div class="col-4 text-end">Ingredients <span class="badge bg-success">3</span> </div>
+                    <div class="col-8">
+                        <ul class="unstyle">
+                            <li><i class="fas fa-utensils"></i>Ginger Ale</li>
+                            <li><i class="fas fa-utensils"></i>Orange</li>
+                            <li><i class="fas fa-utensils"></i>Orange Juice Concentrate</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 text-end">Tags</div>
+                    <div class="col-8">
+                        <a href="#" class="badge">Low potassium</a>
+                        <a href="#" class="badge">Low sodium</a>
+                        <a href="#" class="badge">Jain Diet</a>
+                        <a href="#" class="badge">Eggeterian</a>
+                        <a href="#" class="badge">Pescetarian</a>
+                        <a href="#" class="badge">Vegan</a>
+                        <a href="#" class="badge">Gluten Free</a>
+                        <a href="#" class="badge">Lactose Free</a>
+                        <a href="#" class="badge">Alcohol Free</a>
+                        <a href="#" class="badge">Vegeterian</a>
+                    </div>
+                </div>
+                <div class="exploreMore">
+                    <p>There are atleast 36 more recipes matching more than 50% of the ingredients used by this recipe.
+                    </p>
+                    <button class="btn btn-primary"><i class="fa fa-search"></i> Explore More</button>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <ul class="nav nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">Diet Type</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">Nutrient
+                            Type</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">Time Wise</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        Explore recipes from the above ingredients based on Course, Cuisines, Diet types, Nutrient
+                        information and Cooking time . Click on below button to see how are they speard across various
+                        categories:
+                        <div>
+                            <img src="images/graph.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        Explore recipes from the above ingredients based on Course, Cuisines, Diet types, Nutrient
+                        information and Cooking time . Click on below button to see how are they speard across various
+                        categories:
+                        <div>
+                            <img src="images/graph.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        Explore recipes from the above ingredients based on Course, Cuisines, Diet types, Nutrient
+                        information and Cooking time . Click on below button to see how are they speard across various
+                        categories:
+                        <div>
+                            <img src="images/graph.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-sm">Go to Instructions</button>
+                <button class="btn btn-primary btn-sm">Order Recipe kit</button>
+            </div>
+        </div>
+    </main>
+    <footer role="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6>Resources</h6>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Usage</a></li>
+                        <li><a href="#">Directory</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h6>Legal</h6>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6>Connect</h6>
+                    <ul>
+                        <li>
+                            <a href="mailto:admin@makeourmeal.com" target="_blank" rel="nofollow noopener noreferrer"
+                                aria-label="Write an email" alt="Email address"><i class="fa fa-envelope"></i></a>
+                            <a href="https://www.facebook.com/makeoourmeal" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Open facebook page"
+                                alt="Facebook page"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/makeourmeal/" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Open instagram page"
+                                alt="Instagram page"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/makeourmeal" target="_blank" rel="nofollow noopener noreferrer"
+                                aria-label="Open twitter page" alt="Twitter handle"><i class="fab fa-twitter"></i></a>
+                            <a href="https://makeourmeal.wordpress.com" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Open wordpress page"
+                                alt="Wordpress page"><i class="fab fa-wordpress"></i></a>
+                        </li>
+                        <li>Share us:
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=www.makeourmeal.com" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Share us facebook"
+                                alt="Share on facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/share?url=www.makeourmeal.com" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Tweet about us" alt="Share on twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h6 class="text-center"><i class="far fa-copyright"></i> 2021 makeourmeal.com. Made with <i class="fas fa-heart"
+                style="color:#c52424"></i></h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        const body = document.querySelector('body');
+        body.onscroll = logScroll;
+
+        function logScroll(e) {
+            console.log(`Scroll position: ${e.target.scrollTop}`);
+        }
+    </script>
+</body>
+
+</html>
