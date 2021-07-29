@@ -27,6 +27,9 @@ a {
         text-decoration: none;
     }
 }
+header{
+    padding-top: 90px;
+}
 .navbar{
     border-bottom: 2px solid $greyBg;
     background: #fff;
@@ -168,6 +171,7 @@ footer[role="footer"] {
 main[role="main"] {
     padding-top: 15px;
     padding-bottom: 15px;
+    min-height: calc(100vh - 276px);
 
     aside[role="search"] {
         flex: 0 0 250px;
@@ -206,6 +210,8 @@ main[role="Details"]{
             }
         }
         .unstyle{
+            max-height: 200px;
+            overflow-y: auto;
             li{
                 position: relative;
                 font-weight: 500;
@@ -253,9 +259,6 @@ main[role="Details"]{
 }
 section[role="dataList"] {
     flex-grow: 1;    
-    max-height:calc(100vh - 100px);
-    overflow-y: auto;   
-    overflow-x: hidden;
 }
 
 .listItem {
@@ -294,7 +297,6 @@ section[role="dataList"] {
                 z-index: 9;
                 position: relative;
                 font-size: 12px;
-                color: #000;
             }
             &:hover{
                 &::after{
@@ -368,6 +370,48 @@ section[role="dataList"] {
     margin-top: 10px;
     border-radius: 10px;
     text-align: center;
+}
+.customInput{
+    input[type="checkbox"]{
+        opacity: 0;
+        width: 0;
+        height: 0;
+        + label{
+            border: 1px solid $color-primary;
+            padding: 2px 10px 2px 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 0.8em;
+            position: relative;
+            border-radius: 4px;
+            cursor: pointer;
+            &::before{
+                width: 11px;
+                height: 11px;
+                border: 1px solid $color-primary;
+                content: '';
+                position: absolute;
+                left: 5px;
+                top: 6px;
+                border-radius: 2px;
+            }
+        }
+        &:checked{
+            opacity: 0;
+            width: 0;
+            height: 0;
+            & + label{
+                background: $color-primary;
+                color: #fff;
+                &::before{
+                    background: #fff;
+                }
+                &::after{
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }
 .btn{
     &.btn-primary{

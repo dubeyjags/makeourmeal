@@ -21,6 +21,10 @@ a:hover {
   text-decoration: none;
 }
 
+header {
+  padding-top: 90px;
+}
+
 .navbar {
   border-bottom: 2px solid #f2f2f2;
   background: #fff;
@@ -192,6 +196,7 @@ footer[role="footer"] ul li + li {
 main[role="main"] {
   padding-top: 15px;
   padding-bottom: 15px;
+  min-height: calc(100vh - 276px);
 }
 
 main[role="main"] aside[role="search"] {
@@ -240,6 +245,11 @@ main[role="Details"] .detail .row {
 
 main[role="Details"] .detail .row .text-end {
   font-weight: 600;
+}
+
+main[role="Details"] .detail .unstyle {
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 main[role="Details"] .detail .unstyle li {
@@ -297,9 +307,6 @@ section[role="dataList"] {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-height: calc(100vh - 100px);
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .listItem {
@@ -342,7 +349,6 @@ section[role="dataList"] {
   z-index: 9;
   position: relative;
   font-size: 12px;
-  color: #000;
 }
 
 .listItem .info i[class^='fa']:hover::after {
@@ -422,6 +428,53 @@ section[role="dataList"] {
   margin-top: 10px;
   border-radius: 10px;
   text-align: center;
+}
+
+.customInput input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.customInput input[type="checkbox"] + label {
+  border: 1px solid #b14628;
+  padding: 2px 10px 2px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.customInput input[type="checkbox"] + label::before {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #b14628;
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  border-radius: 2px;
+}
+
+.customInput input[type="checkbox"]:checked {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.customInput input[type="checkbox"]:checked + label {
+  background: #b14628;
+  color: #fff;
+}
+
+.customInput input[type="checkbox"]:checked + label::before {
+  background: #fff;
+}
+
+.customInput input[type="checkbox"]:checked + label::after {
+  display: inline-block;
 }
 
 .btn.btn-primary {

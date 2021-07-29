@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Make Our Meal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Makeourmeal.com"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <select name="" id="" class="form-select form-select-sm">
+                                <option value="">Self</option>
+                                <option value="">Spouse</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recipe-collection.html"><i
+                                    class="fa fa-list-ul d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Recipe Collection</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html"><i
+                                    class="fa fa-search d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Search More Recipies</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="member-settings.html"><i
+                                    class="fa fa-cog d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Member Settings</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="member-management.html"><i
+                                    class="fa fa-user d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Member Management</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html"><i
+                                    class="fa fa-sign-in-alt d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Login With <img src="images/google.png"
+                                        alt=""></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container-fluid">
+        <h2 class="mt-2">Member Management </h2>
+        <hr>
+        <div class="row">
+            <div class="col-6"><h4>Current members</h4></div>
+            <div class="col-6 text-end"><button class="btn btn-primary">Add Members</button></div>
+        </div>
+        <hr>    
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Member Name	</th>
+                    <th>Nickname</th>
+                    <th>Allergic Ingredients</th>
+                    <th>Diet Restrictions</th>
+                    <th>Meal Types	</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jags Dubey	</td>
+                    <td>Jags</td>
+                    <td></td>
+                    <td>Vegeterian</td>
+                    <td></td>
+                    <td>
+                        <a href="#" class="fas fa-user-edit"></a>
+                        <a href="#" class="fas fa-user-times"></a>
+                     </td>
+                </tr>
+                <tr>
+                    <td>Spouse Wife</td>
+                    <td>Wifey</td>
+                    <td></td>
+                    <td>Vegeterian</td>
+                    <td></td>
+                    <td>
+                        <a href="#" class="fas fa-user-edit"></a>
+                        <a href="#" class="fas fa-user-times"></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer role="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6>Resources</h6>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Usage</a></li>
+                        <li><a href="#">Directory</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h6>Legal</h6>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6>Connect</h6>
+                    <ul>
+                        <li>
+                            <a href="mailto:admin@makeourmeal.com" target="_blank" rel="nofollow noopener noreferrer"
+                                aria-label="Write an email" alt="Email address"><i class="fa fa-envelope"></i></a>
+                            <a href="https://www.facebook.com/makeoourmeal" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Open facebook page"
+                                alt="Facebook page"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/makeourmeal/" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Open instagram page"
+                                alt="Instagram page"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/makeourmeal" target="_blank" rel="nofollow noopener noreferrer"
+                                aria-label="Open twitter page" alt="Twitter handle"><i class="fab fa-twitter"></i></a>
+                            <a href="https://makeourmeal.wordpress.com" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Open wordpress page"
+                                alt="Wordpress page"><i class="fab fa-wordpress"></i></a>
+                        </li>
+                        <li>Share us:
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=www.makeourmeal.com" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Share us facebook"
+                                alt="Share on facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/share?url=www.makeourmeal.com" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Tweet about us" alt="Share on twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h6 class="text-center"><i class="far fa-copyright"></i> 2021 makeourmeal.com. Made with <i class="fas fa-heart"
+                style="color:#c52424"></i></h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        document.getElementsByName('aside').style.display = 'none';
+    </script>
+</body>
+
+</html>

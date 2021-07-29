@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Make Our Meal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Makeourmeal.com"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <select name="" id="" class="form-select form-select-sm">
+                                <option value="">Self</option>
+                                <option value="">Spouse</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recipe-collection.html"><i
+                                    class="fa fa-list-ul d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Recipe Collection</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html"><i
+                                    class="fa fa-search d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Search More Recipies</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="member-settings.html"><i
+                                    class="fa fa-cog d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Member Settings</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="member-management.html"><i
+                                    class="fa fa-user d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Member Management</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html"><i
+                                    class="fa fa-sign-in-alt d-inline-block d-md-none"></i><span
+                                    class="d-none d-md-inline-block">Login With <img src="images/google.png"
+                                        alt=""></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container-fluid">
+        <h2 class="mt-2">Setting For <span class="bold text-primary">Jags</span></h2>
+        <hr>
+        <div class="card mb-2">
+            <div class="card-header">Diet Preferences</div>
+            <div class="card-body">
+                <p>Select your diet preferences (You can check FAQ link at the bottom to see what each diet type
+                    contains)</p>
+                <div class="customInput">
+                    <input type="checkbox" id="dietPrefrences1" value="Alcohol Free"><label
+                        for="dietPrefrences1">Alcohol Free</label>
+                    <input type="checkbox" id="dietPrefrences2" value="Eggeterian"><label
+                        for="dietPrefrences2">Eggeterian</label>
+                    <input type="checkbox" id="dietPrefrences3" value="Gluten Free"><label for="dietPrefrences3">Gluten
+                        Free</label>
+                    <input type="checkbox" id="dietPrefrences4" value="Jain Diet"><label for="dietPrefrences4">Jain
+                        Diet</label>
+                    <input type="checkbox" id="dietPrefrences5" value="Lactose Free"><label
+                        for="dietPrefrences5">Lactose Free</label>
+                    <input type="checkbox" id="dietPrefrences6" value="Pescetarian"><label
+                        for="dietPrefrences6">Pescetarian</label>
+                    <input type="checkbox" id="dietPrefrences7" value="Vegeterian" checked=""><label
+                        for="dietPrefrences7">Vegeterian</label>
+                    <input type="checkbox" id="dietPrefrences8" value="Vegan"><label for="dietPrefrences8">Vegan</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-2">
+            <div class="card-header">Meal Preferences</div>
+            <div class="card-body">
+                <p>Select your meal preferences (You can check FAQ link at the bottom to see how the meal types are
+                    evaluated)</p>
+                <div class="customInput">
+                    <input type="checkbox" id="mealPrefrences" value="Vegan"><label for="mealPrefrences">Balanced</label>
+                    <input type="checkbox" id="mealPrefrences1" value="Vegan"><label for="mealPrefrences1">High fiber</label>
+                    <input type="checkbox" id="mealPrefrences2" value="Vegan"><label for="mealPrefrences2">High protein</label>
+                    <input type="checkbox" id="mealPrefrences3" value="Vegan"><label for="mealPrefrences3">Keto friendly</label>
+                    <input type="checkbox" id="mealPrefrences4" value="Vegan"><label for="mealPrefrences4">Kidney friendly</label>
+                    <input type="checkbox" id="mealPrefrences5" value="Vegan"><label for="mealPrefrences5">Low carb</label>
+                    <input type="checkbox" id="mealPrefrences6" value="Vegan"><label for="mealPrefrences6">Low fat</label>
+                    <input type="checkbox" id="mealPrefrences7" value="Vegan"><label for="mealPrefrences7">Low sodium</label>
+                    <input type="checkbox" id="mealPrefrences8" value="Vegan"><label for="mealPrefrences8">Low potassium</label>
+                    <input type="checkbox" id="mealPrefrences9" value="Vegan"><label for="mealPrefrences9">Sugar conscious</label>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-2">
+            <div class="card-body">
+                <h2>Must not have ingredients                </h2>
+                <p>This user setting allows you to exclude specific ingredients that you never want in a recipe. It may be because of allergy or due to any other reason that you dont want a specific ingredient in your meal.                </p>
+                <div class="row">
+                    <div class="col-md-3"><input type="text" class="form-control" placeholder="Search Ingredient"></div>
+                    <div class="col-md-9">My excluded ingredients                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary">Update Settings</button>
+    </main>
+    <footer role="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6>Resources</h6>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Usage</a></li>
+                        <li><a href="#">Directory</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h6>Legal</h6>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6>Connect</h6>
+                    <ul>
+                        <li>
+                            <a href="mailto:admin@makeourmeal.com" target="_blank" rel="nofollow noopener noreferrer"
+                                aria-label="Write an email" alt="Email address"><i class="fa fa-envelope"></i></a>
+                            <a href="https://www.facebook.com/makeoourmeal" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Open facebook page"
+                                alt="Facebook page"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/makeourmeal/" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Open instagram page"
+                                alt="Instagram page"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/makeourmeal" target="_blank" rel="nofollow noopener noreferrer"
+                                aria-label="Open twitter page" alt="Twitter handle"><i class="fab fa-twitter"></i></a>
+                            <a href="https://makeourmeal.wordpress.com" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Open wordpress page"
+                                alt="Wordpress page"><i class="fab fa-wordpress"></i></a>
+                        </li>
+                        <li>Share us:
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=www.makeourmeal.com" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Share us facebook"
+                                alt="Share on facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/share?url=www.makeourmeal.com" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Tweet about us" alt="Share on twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h6 class="text-center"><i class="far fa-copyright"></i> 2021 makeourmeal.com. Made with <i class="fas fa-heart"
+                style="color:#c52424"></i></h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        document.getElementsByName('aside').style.display = 'none';
+    </script>
+</body>
+
+</html>
