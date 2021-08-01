@@ -30,19 +30,23 @@
                             </select>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="recipe-collection.html"><i class="fa fa-list-ul d-inline-block d-md-none"></i><span
+                            <a class="nav-link" href="recipe-collection.html"><i
+                                    class="fa fa-list-ul d-inline-block d-md-none"></i><span
                                     class="d-none d-md-inline-block">Recipe Collection</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="search.html"><i class="fa fa-search d-inline-block d-md-none"></i><span
+                            <a class="nav-link" href="search.html"><i
+                                    class="fa fa-search d-inline-block d-md-none"></i><span
                                     class="d-none d-md-inline-block">Search More Recipies</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="member-settings.html"><i class="fa fa-cog d-inline-block d-md-none"></i><span
+                            <a class="nav-link" href="member-settings.html"><i
+                                    class="fa fa-cog d-inline-block d-md-none"></i><span
                                     class="d-none d-md-inline-block">Member Settings</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="member-management.html"><i class="fa fa-user d-inline-block d-md-none"></i><span
+                            <a class="nav-link" href="member-management.html"><i
+                                    class="fa fa-user d-inline-block d-md-none"></i><span
                                     class="d-none d-md-inline-block">Member Management</span></a>
                         </li>
                         <li class="nav-item">
@@ -119,13 +123,20 @@
                         <a href="tags.html" class="badge">Vegeterian</a>
                     </div>
                 </div>
-                <div class="exploreMore">
+                    <div class="text-end">
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#instructions">Go to Instructions</button>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#orderRecipeKit">Order Recipe kit</button>
+                        <button class="btn btn-primary btn-sm">Add Collection</button>
+                    </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="exploreMore mb-3">
                     <p>There are atleast 36 more recipes matching more than 50% of the ingredients used by this recipe.
                     </p>
                     <button class="btn btn-primary"><i class="fa fa-search"></i> Explore More</button>
                 </div>
-            </div>
-            <div class="col-xl-4">
                 <ul class="nav nav-justified" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
@@ -167,8 +178,6 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-primary btn-sm">Go to Instructions</button>
-                <button class="btn btn-primary btn-sm">Order Recipe kit</button>
             </div>
         </div>
 
@@ -466,7 +475,39 @@
         <h6 class="text-center"><i class="far fa-copyright"></i> 2021 makeourmeal.com. Made with <i class="fas fa-heart"
                 style="color:#c52424"></i></h6>
     </footer>
+<!-- Modal -->
+<div class="modal fade" id="orderRecipeKit" tabindex="-1" aria-labelledby="orderRecipetKitLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderRecipetKitLabel">Recipe kit order</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <input type="text" class="form-control" id="fname" placeholder="Zip or Pincode">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="instructions" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="instructionsLabel">Makeourmeal.com</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <iframe width="100%" height="500px" src="https://www.makeourmeal.com" title="makeourmeal.com"></iframe>
 
+        </div>
+    </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
