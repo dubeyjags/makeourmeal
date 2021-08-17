@@ -97,7 +97,8 @@ section[role="search"] .form-control {
 
 section[role="banner"] {
   padding: 5vh 0;
-  min-height: 68vh;
+  height: 68vh;
+  overflow-y: auto;
 }
 
 section[role="aboutUs"],
@@ -235,6 +236,9 @@ main[role="main"] aside[role="search"] {
   margin: -15px 20px -15px -15px;
   padding: 20px;
   background: #e5a08d;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 main[role="main"] aside[role="search"] .badge {
@@ -354,12 +358,18 @@ section[role="dataList"] {
   overflow-x: hidden;
 }
 
+section[role="dataList"] .col-xl-4.col-lg-4.col-sm-6 {
+  margin-bottom: 20px;
+}
+
 .listItem {
   position: relative;
-  margin-bottom: 20px;
+  height: 100%;
   border-radius: 20px;
   overflow-y: hidden;
   background: #f2f2f2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .listItem .info {
@@ -368,7 +378,14 @@ section[role="dataList"] {
   top: 5px;
 }
 
-.listItem .info i[class^='fa'] {
+.listItem .info img {
+  max-width: 20px;
+  max-height: 20px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.listItem .info i {
   margin: 2px 1px;
   position: relative;
   width: 20px;
@@ -377,7 +394,7 @@ section[role="dataList"] {
   cursor: pointer;
 }
 
-.listItem .info i[class^='fa']::after {
+.listItem .info i::after {
   background: rgba(255, 255, 255, 0.6);
   width: 20px;
   height: 20px;
@@ -390,13 +407,13 @@ section[role="dataList"] {
   border-radius: 50%;
 }
 
-.listItem .info i[class^='fa']::before {
+.listItem .info i::before {
   z-index: 9;
   position: relative;
   font-size: 12px;
 }
 
-.listItem .info i[class^='fa']:hover::after {
+.listItem .info i:hover::after {
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -421,10 +438,16 @@ section[role="dataList"] {
   color: #fff;
 }
 
+.listItem img.img-fluid {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .listItem.active {
   background: #2fb445;
-  -webkit-box-shadow: 0 0 10px #2fb445;
-          box-shadow: 0 0 10px #2fb445;
+  color: #fff;
 }
 
 .listItem.active i[class^='fa']::after {
@@ -436,6 +459,18 @@ section[role="dataList"] {
   color: #fff;
 }
 
+.listItem.active .badge {
+  background: #fff;
+  color: #2fb445;
+}
+
+.listItem:hover {
+  -webkit-box-shadow: 0 0 10px #B4B4B4;
+          box-shadow: 0 0 10px #B4B4B4;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 .pageHeading {
   border-bottom: 1px solid #b14628;
   font-weight: 600;
@@ -445,12 +480,15 @@ section[role="dataList"] {
   color: #b14628;
 }
 
+.pageHeading .info img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
 .inlineStyle {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  max-height: 75vh;
-  overflow-y: auto;
 }
 
 .inlineStyle li {

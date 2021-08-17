@@ -104,7 +104,8 @@ section[role="search"] {
 
 section[role="banner"] {
     padding: 5vh 0;
-    min-height: 68vh;
+    height: 68vh;
+    overflow-y: auto;
 }
 
 section[role="aboutUs"],
@@ -213,7 +214,10 @@ main[role="main"] {
         flex: 0 0 250px;
         margin: -15px 20px -15px -15px;
         padding: 20px;
-        background: lighten($color-primary, 30%);
+        background: lighten($color-primary, 30%);        
+        max-height: calc(100vh - 110px);
+        overflow-y: auto;
+        overflow-x: hidden;
 
         .badge {
             font-weight: 400;
@@ -331,28 +335,37 @@ section[role="dataList"] {
     max-height:calc(100vh - 110px);
     overflow-y: auto;
     overflow-x: hidden;
+    .col-xl-4.col-lg-4.col-sm-6{
+        margin-bottom: 20px;
+    }
 }
 
 .listItem {
     position: relative;
-    margin-bottom: 20px;
+    height: 100%;
     border-radius: 20px;
     overflow-y: hidden;
     background: #f2f2f2;
+    transition: all 0.3s;
 
     .info {
         position: absolute;
         right: 10px;
         top: 5px;
-
-        i[class^='fa'] {
+        
+        img{
+            max-width: 20px;
+            max-height: 20px;
+            background: #fff;
+            border-radius: 50%;
+        }
+        i{
             margin: 2px 1px;
             position: relative;
             width: 20px;
             height: 20px;
             text-align: center;
             cursor: pointer;
-
             &::after {
                 background: rgba(255, 255, 255, 0.6);
                 width: 20px;
@@ -400,11 +413,14 @@ section[role="dataList"] {
             color: #fff;
         }
     }
-
+    img.img-fluid{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
     &.active {
         background: $color-green;
-        box-shadow: 0 0 10px $color-green;
-
+        color: #fff;
         i[class^='fa'] {
             &::after {
                 background: $color-green;
@@ -415,6 +431,14 @@ section[role="dataList"] {
                 color: #fff;
             }
         }
+        .badge {
+            background: #fff;
+            color: $color-green;
+        }
+    }
+    &:hover{
+        box-shadow: 0 0 10px #B4B4B4;
+        transform: scale(1.01);
     }
 }
 
@@ -425,14 +449,18 @@ section[role="dataList"] {
     padding-bottom: 10px;
     margin-bottom: 20px;
     color: $color-primary;
+    .info{
+        img{
+            max-width: 25px;
+            max-height: 25px;
+        }
+    }
 }
 
 .inlineStyle {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    max-height: 75vh;
-    overflow-y: auto;
 
     li {
         display: inline-block;
